@@ -1,6 +1,8 @@
 # KMR Agency Stock Manager
 This is an out-of-date version of a tool that was built for [KMR Agency](https://kmragency.com/)
 
+This repository exists to demonstrate compenency with Django/Python
+
 
 
 

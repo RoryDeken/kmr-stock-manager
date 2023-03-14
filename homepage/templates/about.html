@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+
+{% block title %} About {% endblock title %}
+
+
+{% block content %}
+<div class="container-fluid p-4">
+    <div class="row">
+        <div class="col-xl-6">
+    {% if not user.is_authenticated  %}
+        <a href="{% url 'home' %}" class="btn btn-secondary">Go Back</a>
+    {% endif %}    
+    
+    <h2>KMR Stock Manager - About</h2>
+    <p>
+        KMR Stock manager is a simple inventory management software created for the requirements of <a href="https://kmragency.com/" target="_blank">KMR Agency</a>.
+        This application keeps track of stock transactions with a dynamically rendered bill. The billing functionality is still under development. 
+        Each supplier is provided with a profile where they can see the history of their transactions with the company.
+    </p>
+ 
+        <h3>Features:</h3>
+            <ul>                
+                <li>Interactive Chart to display current available stock</li>
+                <li >Stock details like current available stock are maintained</li>
+                <li >Incoming transactions are done through purchases</li>
+                <li >Outgoing transactions are done through sales</li>
+                <li >Every transaction performed through the software is recorded</li>
+                <li >Bill is dynamically rendered and can be printed</li>
+                <li >Separate profiles are maintained for suppliers</li>
+            </ul>  
+        </div>
+        </div>
+        </div>
+{% endblock content %}

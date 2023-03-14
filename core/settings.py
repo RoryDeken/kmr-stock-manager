@@ -15,7 +15,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-SECRET_KEY = 'tyu(9l1v%^+r(vt#ehf-y9#lis516#3bo5@bo-rd*d%a=!%8#5'
+SECRET_KEY = 'CHANGETHISAFTERCLONING'
 
 
 DEBUG = True
